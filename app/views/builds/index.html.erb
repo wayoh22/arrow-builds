@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Builds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Arrow shaft</th>
+      <th>Insert weight</th>
+      <th>Draw length</th>
+      <th>Draw weight</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @builds.each do |build| %>
+      <tr>
+        <td><%= build.arrow_shaft %></td>
+        <td><%= build.insert_weight %></td>
+        <td><%= build.draw_length %></td>
+        <td><%= build.draw_weight %></td>
+        <td><%= link_to 'Show', build %></td>
+        <td><%= link_to 'Edit', edit_build_path(build) %></td>
+        <td><%= link_to 'Destroy', build, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Build', new_build_path %>

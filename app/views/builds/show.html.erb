@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Arrow shaft:</strong>
+  <%= @build.arrow_shaft %>
+</p>
+
+<p>
+  <strong>Insert weight:</strong>
+  <%= @build.insert_weight %>
+</p>
+
+<p>
+  <strong>Draw length:</strong>
+  <%= @build.draw_length %>
+</p>
+
+<p>
+  <strong>Draw weight:</strong>
+  <%= @build.draw_weight %>
+</p>
+
+<%= link_to 'Edit', edit_build_path(@build) %> |
+<%= link_to 'Back', builds_path %>

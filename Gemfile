@@ -47,7 +47,7 @@ group :development do
   gem 'spring'
   gem "better_errors"
   gem "binding_of_caller"
-  gem "devise"
+  gem 'devise', '~> 4.8'
 end
 
 group :test do

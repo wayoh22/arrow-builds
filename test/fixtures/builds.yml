@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  arrow_shaft: MyString
+  insert_weight: MyString
+  draw_length: 9.99
+  draw_weight: 1
+
+two:
+  arrow_shaft: MyString
+  insert_weight: MyString
+  draw_length: 9.99
+  draw_weight: 1

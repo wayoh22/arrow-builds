@@ -235,7 +235,7 @@ DEPENDENCIES
   bulma-rails (~> 0.9.1)
   byebug
   capybara (>= 3.26)
-  devise
+  devise (~> 4.8)
   gravatar_image_tag
   jbuilder (~> 2.7)
   listen (~> 3.3)
