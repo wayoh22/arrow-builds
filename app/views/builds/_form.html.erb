@@ -1,16 +1,39 @@
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-4">
+        <h2 class="title is-2">New Arrow Build</h2>
+        <%= simple_form_for(@build) do |f| %>
+          <%= f.error_notification %>
+          <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= simple_form_for(@build) do |f| %>
-  <%= f.error_notification %>
-  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
-
-  <div class="form-inputs">
-    <%= f.input :arrow_shaft %>
-    <%= f.input :insert_weight %>
-    <%= f.input :draw_length %>
-    <%= f.input :draw_weight %>
+          <div class="field">
+            <div class="control">
+            <%= f.input :arrow_shaft %>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+            <%= f.input :insert_weight %>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+            <%= f.input :draw_length %>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+            <%= f.input :draw_weight %>
+            </div>
+          </div>
+          <div class="field">
+            <div class="control">
+            <%= f.button :submit, "Build!", class:"button" %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
   </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+</div>

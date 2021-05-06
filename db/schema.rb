@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2021_05_06_172337) do
 
   create_table "builds", force: :cascade do |t|
     t.string "arrow_shaft"
-    t.string "insert_weight"
+    t.integer "insert_weight"
     t.decimal "draw_length"
     t.integer "draw_weight"
     t.datetime "created_at", precision: 6, null: false
